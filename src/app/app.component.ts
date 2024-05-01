@@ -11,8 +11,13 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'my-app';
   thisIsMyString = 'une chaine de caractere';
+  myProperty = 'ceci est ma propriété';
 
   ngOnInit(): void {
     console.log(this.thisIsMyString);
+  }
+
+  private logMyProperty() {
+    console.log(this.myProperty);
   }
 }
